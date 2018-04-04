@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="eMOs.exe" version="1.0.0.1" publicKeyToken="648144ee71d83543" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="eMOs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="eMOs.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.Common" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.DataVisualization" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.ReportViewer.ProcessingObjectModel" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.SqlServer.Types" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="eMOs.exe" size="145344">
+      <assemblyIdentity name="eMOs" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>0IM0KRCKs+dt0EM4afYRg2UxXNssYdRzCrqOQD51gsg=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Microsoft.ReportViewer.WinForms.dll" size="563392">
+      <assemblyIdentity name="Microsoft.ReportViewer.WinForms" version="12.0.0.0" publicKeyToken="89845DCD8080CC91" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>sQraLWiB7q2Q3DGfeRq9DV1vAo41MrfXZBrd0AGvuTw=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="eMOs.exe.config" size="526">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>neUrVWR3XBz0dTurgqkZ73jmc5HyypEUfePzAGvWqNY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="EmoS.mdf" size="3342336" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>muV+grPFnPgtgFS50PIGxttGbqz0VNiX6fmG4OmQeQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="EmoS_log.ldf" size="835584" writeableType="applicationData">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qid2raZ6nA/OKdu51m+y7P4LzN5AoReW8nSuOu98eAI=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=MURZYN-PC\Szymon" issuerKeyHash="85b990ee754910a652fa7a9954c854160ba15616" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>rj664x2rqi5MWq+em53Q9+0l1Q3Cwj8cyg3cWX0ACMI=</DigestValue></Reference></SignedInfo><SignatureValue>dUFYgrCc4gWW4c8+V/LNBFfcH9VoHIBqb+FksGFBfxRE1rPy149FQYwrbWT6T1+DMPuKTotwcdZqcK1dATq/04lbrWi9tbFvi7Uua6Nx9W5r1TeiA7djIVo4shxPmMccT0Rgf13xijmb7F23/w/Ng9Nx9AKk5eQWolrqMyvGQOg=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>wKrXc4/yFfYzkmghGMQK5omb8yt1n+y1xbwinUtIZcsWNyEcRnXGpnkRmArKWFPqBUIwyq4hehckFlD8vDDki4QHIJEtL4gWW399Y4L6CfYV5ZUOpnRFPZwPAKnHVbtJ7N603gG4bvXmMoGH6M6EoGHk9lI1OKVnzjORzL4pgfE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="c208007d59dc0dca1c3fc2c20dd525edf7d09d9b9eaf5a4c2eaaab1de3ba3eae" Description="" Url=""><as:assemblyIdentity name="eMOs.exe" version="1.0.0.1" publicKeyToken="648144ee71d83543" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=MURZYN-PC\Szymon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>vOIdPFFpax5Ej8Vbnc1+i5z4G6UEXhuK3nGu/1LBVpg=</DigestValue></Reference></SignedInfo><SignatureValue>NWlHnfmKWfMpqhRazZ5CELWncYZIi5PG4dSUfrQdfPKITi51R85bT38ADwci+wOjho6+tSg/8z74zqyxXbjLcXmzmGj9Z6Ai9yYhYBSLI+CbRx5Ia4xqdKJRc5Ho9zMVp1gwUfYTWMhweppLskQEaGu6kP2kEFj/1B7kzwkZk8I=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>wKrXc4/yFfYzkmghGMQK5omb8yt1n+y1xbwinUtIZcsWNyEcRnXGpnkRmArKWFPqBUIwyq4hehckFlD8vDDki4QHIJEtL4gWW399Y4L6CfYV5ZUOpnRFPZwPAKnHVbtJ7N603gG4bvXmMoGH6M6EoGHk9lI1OKVnzjORzL4pgfE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQGtOGf59hPYRMK6CrLbaunTANBgkqhkiG9w0BAQsFADArMSkwJwYDVQQDHiAATQBVAFIAWgBZAE4ALQBQAEMAXABTAHoAeQBtAG8AbjAeFw0xNzAzMDEwMDA3NTJaFw0xODAzMDEwNjA3NTJaMCsxKTAnBgNVBAMeIABNAFUAUgBaAFkATgAtAFAAQwBcAFMAegB5AG0AbwBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAqtdzj/IV9jOSaCEYxArmiZvzK3Wf7LXFvCKdS0hlyxY3IRxGdcameRGYCspYU+oFQjDKriF6FyQWUPy8MOSLhAcgkS0viBZbf31jgvoJ9hXllQ6mdEU9nA8AqcdVu0ns3rTeAbhu9eYygYfozoSgYeT2UjU4pWfOM5HMvimB8QIDAQABMA0GCSqGSIb3DQEBCwUAA4GBABYh2ppUCe91ZEgSTxtYPrOw03gm5s8CZItN2lyWp9ffKTEkoFqpHRU13unM19Zb2qX8ZKzFt44qFZO7141CVrTFkJgZDZNpNZds2dbQQtMV96VdvibRX3zgecpgtyJCbUojO2ZGi/VpvfsIFm+Qdv49Bhti4ZZijlYDiJN/3tsT</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
